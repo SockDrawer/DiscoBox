@@ -16,7 +16,7 @@ Vagrant.configure(2) do |config|
   #To install: vagrant plugin install vagrant-hostsupdater
   #This will let you access the VM at discourse.sockdrawer.local once it's up
   config.vm.network "private_network", ip: "192.168.33.12"
-  #config.vm.hostname = "discourse.sockdrawer.local"
+  config.vm.hostname = "discourse.sockdrawer.local"
 
    config.vm.provider "virtualbox" do |vb|
      # Customize the amount of memory on the VM:

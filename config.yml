@@ -50,8 +50,8 @@ env:
 
   DISCOURSE_HOSTNAME: 'discourse.sockdrawer.local'
 
-  DISCOURSE_SMTP_ADDRESS: localhost         # (mandatory)
-  #DISCOURSE_SMTP_PORT: 587                        # (optional)
+  DISCOURSE_SMTP_ADDRESS: 127.0.0.1         # (mandatory)
+  DISCOURSE_SMTP_PORT: 1025                # (optional)
   #DISCOURSE_SMTP_USER_NAME: user@example.com      # (optional)
   #DISCOURSE_SMTP_PASSWORD: pa$$word               # (optional)
   #DISCOURSE_SMTP_ENABLE_START_TLS: true           # (optional, default true)
