@@ -18,7 +18,7 @@ rvm use 2.2.2 --default
 
 #Fake mail server
 gem install mailcatcher
-mailcatcher --http-ip 0.0.0.0
+mailcatcher --ip 0.0.0.0
 
 #Discourse
 sudo mkdir -p /var/discourse
@@ -26,4 +26,4 @@ sudo git clone https://github.com/discourse/discourse_docker.git /var/discourse
 cd /var/discourse
 sudo cp /vagrant/config.yml containers/app.yml
 sudo ./launcher bootstrap app
-sudo ./launcher start app
+sudo ./launcher start app --docker-args --net="host"
